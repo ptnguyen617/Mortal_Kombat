@@ -36,10 +36,10 @@ let GameManager = {
         let getActions = document.querySelector(".actions");
         let getEnemy = document.querySelector(".enemy");
         //Create Enemy Fighter!
-        let enemy00 = new Enemy("Johnny", 100, 0, 50, 100, 100);
-        let enemy01 = new Enemy("Sub-Zero", 200, 0, 150, 80, 100);
+        let enemy00 = new Enemy("Scorpion", 100, 0, 50, 100, 100);
+        let enemy01 = new Enemy("Subzero", 200, 0, 150, 80, 100);
         let chooseRandomEnemy = Math.floor(Math.random()* Math.floor(2));
-        console.log(chooseRandomEnemy);
+        //console.log(chooseRandomEnemy);
         switch(chooseRandomEnemy){
             case 0:
                 enemy = enemy00;
@@ -48,6 +48,8 @@ let GameManager = {
                 enemy = enemy01;
                 break;
         }
-
+        getHeader.innerHTML = '<p>Task: Choose Your Move!</p>';
+        getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="PlayerMoves.calcAttack()">Attack!</a>';
+        getEnemy.innerHTML = '<img src="imgs/"'+ enemy.enemyType.toLowerCase() + '.png" atl="' + enemy.enemyType + '" class="img-avatar"><div><h3>' + enemy.EnemyType + '</h3><p class="health-enemy">Health: ' + enemy.health + '</p><p>Mana: ' + enemy.mana + '</p><p>Power: ' + enemy.power + '</p><p>Agility: '+ enemy.agility + '</p><p>Speed: ' + enemy.speed + '</p></div>';
     }
 }

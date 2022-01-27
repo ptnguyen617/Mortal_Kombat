@@ -8,7 +8,9 @@
         <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
         <link rel="stylesheet" href="style.css" />
         <title>Mortal Kombat</title>
-        <script defer src="script.js"></script>
+        <script defer src="js/game.js"></script>
+        <script defer src="js/player.js"></script>
+        <script  defer src="js/enemy.js"></script>
       </head>
 <body>
     <!--Div Class Game-->
@@ -18,33 +20,37 @@
     </div>
     <!--Main Fighters Page-->
     <div class="interface">
-        <a href=#>
-            <img src="imgs/johnnycageProf.png" alt="warrior">
+        <a href="#" onclick="GameManager.setGameStart('Johnny')">
+            <img src="imgs/johnnycageProf.png" alt="Johnny">
             <div>
-                <h3>Johnny descended from a Mediterranean cult that bred warriors for the gods: warriors with special abilities. One of these is the ability to propel himself forward and increase the strength of his blows.</h3>
+                <h3>Johnny Cage</h3>
+                <p>Johnny descended from a Mediterranean cult that bred warriors for the gods: warriors with special abilities. One of these is the ability to propel himself forward and increase the strength of his blows.</p>
             </div>
         </a>
-        <a href=#>
+        <a href="#" onclick="GameManager.setGameStart('Subzero')">
             <img src="imgs/subzeroProf.png" alt="subzero">
             <div>
-                <h3>Sub-Zero possesses power over ice and the ability to control it in many forms. He can flash-freeze people and create an ice statue of himself to act as a scapegoat that can flash-freeze opponents.</h3>
+                <h3>Sub-Zero</h3>
+                <p>Sub-Zero possesses power over ice and the ability to control it in many forms. He can flash-freeze people and create an ice statue of himself to act as a scapegoat that can flash-freeze opponents.</p>
             </div>
         </a>
-        <a href=#>
+        <a href="#" onclick="GameManager.setGameStart('Scorpion')">
             <img src="imgs/scorpionProf.png" alt="scorpion">
             <div>
-                <h3>Scorpion is capable of summoning demonic Nether realm minions that can attack and hold the enemy in place. They can also self-destruct, and the resulting explosion vaporizes the enemy's flesh out of the skeleton.</h3>
+                <h3>Scorpion</h3>
+                <p>Scorpion is capable of summoning demonic Nether realm minions that can attack and hold the enemy in place. They can also self-destruct, and the resulting explosion vaporizes the enemy's flesh out of the skeleton.</p>
             </div>
         </a>
-        <a href=#>
+        <a href="#" onclick="GameManager.setGameStart('Raiden')">
             <img src="imgs/raidenProf.png" alt="raiden">
             <div>
-                <h3>Raiden using his flying attack on Superman Raiden is extremely powerful, being a god of thunder and can use lightning as his weapon, able to fire it as concentrated blasts or torrents. He can also fly and one of his attacks is to fly at his opponent and drive them into walls.</h3>
+                <h3>Raiden</h3>
+                <p>Raiden using his flying attack on Superman Raiden is extremely powerful, being a god of thunder and can use lightning as his weapon, able to fire it as concentrated blasts or torrents. He can also fly and one of his attacks is to fly at his opponent and drive them into walls.</p>
             </div>
         </a>
-    </div>
+    </div><!--End of fighters DIV-->
 
-    <div class="action">
+    <div class="actions">
 
 
     </div>

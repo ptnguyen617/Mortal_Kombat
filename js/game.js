@@ -1,3 +1,8 @@
+//Sound
+let background = new Audio('sounds/themesong.mp3');
+background.volume = .1;
+background.preload = 'auto';
+background.loop = true;
 //creates object and assign to game
 let GameManager = {
     setGameStart: function(classType){
@@ -5,7 +10,9 @@ let GameManager = {
         this.setPreFight();
     },
     
+    
     resetPlayer: function(classType){
+        background.play();
         switch (classType){//switch condition
             case  "Johnny":
                 player = new Player(classType, 200, 0 , 200, 100, 110);
@@ -20,8 +27,9 @@ let GameManager = {
                 player = new Player(classType, 200, 0 , 250, 200, 100);
                 break;
         }
+        
         let getInterFace =  document.querySelector(".interface");
-        getInterFace.innerHTML = '<img src="img/mortal-player/' + classType.toLowerCase() + '.png" class="imgs-avatar"/><div><h3> ' + classType + '</h3><p>Health:  ' + player.health + '</p><p>Mana:  ' + player.mana+ '</p><p>Power:  ' + player.power + '</p><p>Agility :  ' + player.agility + '</p><p>Speed:  ' + player.speed + '</p></div>';
+        getInterFace.innerHTML = '<img src="img/mortal-player/' + classType.toLowerCase() + '.png" class="imgs-avatar"/><div><h3> ' + classType + '</h3><p class="health-player">Health:  ' + player.health + '</p><p>Mana:  ' + player.mana+ '</p><p>Power:  ' + player.power + '</p><p>Agility :  ' + player.agility + '</p><p>Speed:  ' + player.speed + '</p></div>';
  },
     setPreFight: function(){
         let getHeader = document.querySelector(".header");
@@ -35,6 +43,7 @@ let GameManager = {
         let getHeader = document.querySelector(".header");
         let getActions = document.querySelector(".actions");
         let getEnemy = document.querySelector(".enemy");
+        fightSong.play();
         //Create Enemy Fighter!
         let enemy00 = new Enemy("kunglao", 100, 0, 150, 100, 100);
         let enemy01 = new Enemy("Kang", 150, 0, 120, 120, 110);

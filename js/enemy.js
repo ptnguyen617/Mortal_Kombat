@@ -1,5 +1,4 @@
 let enemy;
-
 class Enemy {
     constructor(enemyType, health, mana, power, agility, speed){
     this.enemyType = enemyType;
@@ -9,4 +8,7 @@ class Enemy {
     this.agility = agility;
     this.speed =  speed;
 }
+}
+const resetBtn = ()=>{
+    getArena.style.visibility = "invisible";
 }

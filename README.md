@@ -6,9 +6,3 @@
 <img src="img/mortal_logo.png" alt="Mortal Kombat Logo" >
 <h2>Arena to battle</h2>
 <img src="img/background.jpeg" alt="Arena" >
-<h3>Fighters</h3>
-<li><img src="img/mortal-player/johnny.png" alt="Johnny-Cage" >Johnny Cage</li>
-<li><img src="img/mortal-player/scorpionProf.png" alt="Scorpion" >Scorpion</li>
-<li><img src="img/mortal-player/subzero.png" alt="subzero" >Sub-Zero</li>
-<li><img src="img/mortal-player/raiden.png" alt="raiden" >Raiden</li>
-

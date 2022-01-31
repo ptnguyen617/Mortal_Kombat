@@ -1,12 +1,9 @@
-
 let player;
-// begin loading background music to prevent delay in playing;
-let fightSong = new Audio('sounds/fight.wav');
-fightSong.volume = 1.0;
-fightSong.preload = 'auto';
-fightSong.loop = true;
 
-//create function and property inside Player function
+// let fightSong = new Audio('sounds/fight.wav');
+// fightSong.volume = 1.0;
+// fightSong.preload = 'auto';
+// fightSong.loop = true;
 class Player{
     constructor(classType, health, mana, power, agility, speed){
     this.classType = classType;
@@ -20,7 +17,6 @@ class Player{
 let PlayerMoves = {
 
     calcAttack: function(){
-        
         //Who attack first?
         let getPlayerSpeed = player.speed;
         let getEnemySpeed = enemy.speed;

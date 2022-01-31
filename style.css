@@ -109,10 +109,41 @@ img {
   background-size: auto;
   visibility: hidden;
 }
-.enemy {
+.enemy{
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+}
+.enemy a{
   display: flex;
   flex-wrap: nowrap;
 }
+.enemy img {
+  width: 120px;
+  height: 120px;
+}
+.enemy div {
+  width: 220px;
+  padding: 0 10px 0 20px;
+  background-color: #211510;
+}
+.enemy h3 {
+  font-family: 'Acme', sans-serif;
+  font-size: 22px;
+  color: #f8b700;
+  padding: 12px 0 4px;
+}
+.enemy p {
+  font-family: 'Acme', sans-serif;
+  font-size: 20px;
+  color: #d5c8af;
+  line-height: 20px;
+}
+
+
 
 
 

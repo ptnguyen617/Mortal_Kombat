@@ -7,8 +7,12 @@
 <h2>Arena to battle</h2>
 <img src="img/background.jpeg" alt="Arena" >
 <h3>Fighters</h3>
-<li><img src="img/johnny.png" alt="Johnny-Cage" >Johnny Cage</li>
-<li><img src="img/scorpionProf.png" alt="Scorpion" >Scorpion</li>
-<li><img src="img/subzero.png" alt="subzero" >Sub-Zero</li>
-<li><img src="img/raiden.png" alt="raiden" >Raiden</li>
+<li><img src="img/mortal-player/johnny.png" alt="Johnny-Cage" >Johnny Cage</li>
+<li><img src="img/mortal-player/scorpionProf.png" alt="Scorpion" >Scorpion</li>
+<li><img src="img/mortal-player/subzero.png" alt="subzero" >Sub-Zero</li>
+<li><img src="img/mortal-player/raiden.png" alt="raiden" >Raiden</li>
+
+<h2>Enemies</h2>
+<li><img src="img/mortal-enemy/Kang.png" alt="LiuKang" >Liu Kang</li>
+<li><img src="img/mortal-player/kunglao.png" alt="kung lao" >Kung Lao</li>
 
